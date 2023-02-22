@@ -124,6 +124,7 @@ body{
     height: 25px;
     border-radius: 50%;
     margin-left: 7px;
+    text-align: center;
 }
 .room-1{
     background: #355070;
@@ -136,4 +137,46 @@ body{
 }
 .room-4{
     background: #e56b6f;
+}
+
+@media screen and (max-width: 376px){
+    .room-list li{
+        margin: 0 2.5px;
+    }
+    .color{
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 323px){
+    
+    .days li{
+        font-size: small;
+    }
+    .header .current-date{
+        font-size: 1.20rem;
+    }
+    .weeks li{
+        font-size: small;
+    }
+    .calendar .days li::before{
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    .room-list{
+        justify-content: center;
+    }
+    .room{
+        padding-top: 5px;
+    }
+    .room-list-wrapper ul{
+        flex-wrap: wrap;
+    }
 }
