@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #87CEFA;
+    flex-wrap: wrap;
+}
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 10px;
+}
+.header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    color: #878787;
+    font-size: 1.9rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+.header .icons span:last-child{
+    margin-right: -10px;
+}
+.header .icons span:hover{
+    background: #f2f2f2;
+}
+.calendar{
+    padding: 20px;
+}
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.wrapper .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 10px;
+}
+.header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+.calendar ul li{
+    position: relative;
+    width: calc(100%/7);
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .days li{
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 30px;
+}
+.calendar .weeks li{
+    font-weight: 500;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.calendar .days li::before{
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.calendar .days li:hover::before{
+    background: #f2f2f2;
+}
+.days li.active::before, .days li.active:hover:before{
+    background: #87CEFA;
+}
+/* ??? */
+.days li.num-1::before{
+    background: #355070;
+}
+.days li.num-2::before{
+    background: #6d597a;
+}
+.days li.num-3::before{
+    background: #b56576;
+}
+.days li.num-4::before{
+    background: #e56b6f;
+}
+/* ??? */
+.room-list-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.room-list-wrapper ul{
+    list-style: none;
+    display: flex;
+}
+.room-list li{
+    margin: 0 5px;
+    display: flex;
+}
+.color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+.room-1{
+    background: #355070;
+}
+.room-2{
+    background: #6d597a;
+}
+.room-3{
+    background: #b56576;
+}
+.room-4{
+    background: #e56b6f;
+}
