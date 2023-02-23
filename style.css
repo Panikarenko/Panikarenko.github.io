@@ -191,6 +191,9 @@ body{
     .header .current-date{
         font-size: 1.20rem;
     }
+    .inst-button{
+        font-size: 0.8rem
+    }
     .weeks li{
         font-size: small;
     }
