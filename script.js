@@ -1,6 +1,19 @@
 const currentDate=document.querySelector(".current-date"),
 prevNextIcon=document.querySelectorAll(".icons span"),
+button=document.querySelector(".inst-button"),
+infoWrapper=document.querySelector(".info-wrapper"),
 daysTag=document.querySelector(".days");
+
+button.addEventListener("click", () => {
+    if (infoWrapper.classList.contains('info-inactive')){
+        infoWrapper.classList.remove('info-inactive');
+        button.textContent ="Hide: instrukcje do sprzątania";
+    }
+    else{
+        infoWrapper.classList.add('info-inactive');
+        button.textContent ="Show: instrukcje do sprzątania";
+    }
+})
 
 let date=new Date(),
 currYear=date.getFullYear(),

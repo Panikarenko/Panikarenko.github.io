@@ -7,9 +7,9 @@
 }
 body{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: #87CEFA;
     flex-wrap: wrap;
 }
@@ -17,6 +17,7 @@ body{
     background: #fff;
     width: 450px;
     border-radius: 10px;
+    margin-top: 50px;
 }
 .header .icons span{
     height: 38px;
@@ -86,9 +87,6 @@ body{
     z-index: -1;
     transform: translate(-50%, -50%);
 }
-.calendar .days li:hover::before{
-    background: #f2f2f2;
-}
 .days li.active::before, .days li.active:hover:before{
     background: #87CEFA;
 }
@@ -110,6 +108,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 .room-list-wrapper ul{
     list-style: none;
@@ -138,7 +137,38 @@ body{
 .room-4{
     background: #e56b6f;
 }
-
+.button-wrapper{
+    margin: 50px 0 50px;
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.instrukcja{
+    margin-top: 10px;
+}
+.inst-button{
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .2s ease-in-out; 
+}
+.inst-button:hover{
+    transform: scale(1.07); 
+}
+.active-button{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.info-inactive{
+    display: none;
+}
 @media screen and (max-width: 376px){
     .room-list li{
         margin: 0 2.5px;
@@ -149,7 +179,12 @@ body{
 }
 
 @media screen and (max-width: 323px){
-    
+    .wrapper{
+        width: 400px;
+    }
+    .wrapper .header{
+        padding:20px 25px 5px;
+    }
     .days li{
         font-size: small;
     }
