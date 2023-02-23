@@ -7,9 +7,7 @@
 }
 body{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    /* min-height: 100vh; */
     background: #87CEFA;
     flex-wrap: wrap;
 }
@@ -71,7 +69,7 @@ body{
     font-weight: 500;
 }
 .days li.inactive{
-    color: #aaa;
+    color: white;
 }
 .days li.active{
     color: #fff;
@@ -92,16 +90,16 @@ body{
 }
 /* ??? */
 .days li.num-1::before{
-    background: #355070;
+    background: #E5BA73;
 }
 .days li.num-2::before{
-    background: #6d597a;
+    background: #C3ACD0;
 }
 .days li.num-3::before{
-    background: #b56576;
+    background: #FFC6D3;
 }
 .days li.num-4::before{
-    background: #e56b6f;
+    background: #A6BB8D;
 }
 /* ??? */
 .room-list-wrapper{
@@ -126,16 +124,16 @@ body{
     text-align: center;
 }
 .room-1{
-    background: #355070;
+    background: #E5BA73;
 }
 .room-2{
-    background: #6d597a;
+    background: #C3ACD0;
 }
 .room-3{
-    background: #b56576;
+    background: #FFC6D3;
 }
 .room-4{
-    background: #e56b6f;
+    background: #A6BB8D;
 }
 .button-wrapper{
     margin: 50px 0 50px;
@@ -156,10 +154,10 @@ body{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 10px;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
 .inst-button:hover{
-    transform: scale(1.07); 
+    transform: scale(1.07);
 }
 .active-button{
     background: rgba(255, 255, 255, 0.5);
